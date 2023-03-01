@@ -4,7 +4,7 @@
 function theme_files() {
 
     wp_register_script('swiper-js', get_theme_file_uri('/assets/js/swiper-bundle.min.js'), NULL, '1', true);
-    wp_register_script('main-js', get_theme_file_uri('/assets/js/main.js'), ['swiper-js'], filemtime(get_template_directory() . '/assets/js/main.js'), true);
+    wp_register_script('main-js', get_theme_file_uri('/assets/js/main.js'), NULL, filemtime(get_template_directory() . '/assets/js/main.js'), true);
 
     wp_register_style( 'normalize', get_template_directory_uri() . '/assets/css/normalize.css', NULL, '1', 'all');
     wp_register_style( 'font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css', NULL, '1', 'all');
